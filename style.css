@@ -1,0 +1,137 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: #f8f9fa;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #67952c 0%, #356feb 100%);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    border: 3px solid rgba(255,255,255,0.4);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    flex-shrink: 0;
+}
+
+.logo::before {
+    content: 'RB';
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: 300;
+}
+
+header p {
+    margin: 5px 0 0 0;
+    opacity: 0.9;
+    font-size: 1.1em;
+}
+
+nav {
+    text-align: center;
+    background: #333;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+nav a:hover {
+    background: rgba(108,99,255,0.2);
+    color: #6c63ff;
+    transform: translateY(-2px);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 40px 20px;
+    background: white;
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+section h2 {
+    color: #668616;
+    border-bottom: 3px solid #6c63ff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 25px 15px;
+    }
+    
+    .logo {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+    
+    section {
+        margin: 10px;
+        padding: 25px 15px;
+    }
+}
